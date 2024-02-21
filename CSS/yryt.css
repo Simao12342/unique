@@ -20,6 +20,7 @@ header {
     justify-content: space-between;
     width: 100%;
     height: 70px;
+
 }
 .logo {
     display: flex;
@@ -79,68 +80,65 @@ header {
 .sub-menu {
     display: flex;
     align-items:center;
+    justify-content: space-around;
 
 
 }
 /*випадаюче меню*/
-.dropbtn {
-    background-color: #4CAF50;
+.dropdown button {
+    background-color: #3e8e41;
     color: white;
-
-    margin-left: 50px;
+    margin-left: 20px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    width: 175px;
+    width: 250px;
     height: 100%;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
 
-  }
-  
-  .dropdown {
+}
+
+.dropdown {
     position: relative;
     display: inline-block;
     height: 42px;
-  }
-  
-  .dropdown-content {
+}
 
-    margin-left: 50px;
+.dropdown-menu {
+    margin-left: 20px;
     display: none;
     position: absolute;
-
     background-color: #f9f9f9;
-    min-width: 175px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    color: black;
-    padding: 5px 5px;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    border-bottom: 1px solid gray;
-  }
-  
-  .dropdown-content a:hover {background-color: #537cee;
+    width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
 
 }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
+
+.dropdown-menu a {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    color: rgb(60, 31, 164);
+    padding: 10px 0px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid gray;
+
+}
+
+.dropdown-menu a:hover {
+    background-color: #537cee;
+
+}
+
+.dropdown:hover .dropdown-content {}
+
+.btn:hover .dropbtn {
     background-color: #3e8e41;
-    
-  }
-  /*кінець випадаючого меню*/
+
+}  /*кінець випадаючого меню*/
 
 /*пошук тексту*/
 .search-form {
@@ -180,7 +178,7 @@ header {
 /*кінець пошук тексту*/
 
 /*список побажань*/
-.like-cont button a{
+.like-cont button a {
     width: 130px;
     height: 42px;
     display: flex;
@@ -189,86 +187,232 @@ header {
     border: none;
     text-decoration: none;
     font-family: "Raleway", sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     color: white;
+    margin-bottom: 0;
 }
+
 .like-cont button {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    height: 42px;
     margin-left: 35px;
     background: none;
     border: none;
 
 
-}
 
+}
+.like-cont button span {
+margin-top: 0;
+padding-top: 0;
+}
+.like-cont {
+
+}
+.like-cont button a,span {
+display: flex;
+justify-content: center;
+align-items: center;
+}
 .like-cont button a span {
     font-size: 40px;
+    text-align: center;
 }
 /*кінець список побажань*/
-/*cлайдер з фото*/
-
 .main-info-container {
-   display: flex;
+display: flex;
 }
 .slider {
     position: absolute;
     width:100%;
     display: flex;
- }
+padding-left: 50px;
+}
 
-.container_slider_css{
-
-    margin-left: 100px;
-    width:350px;
-    height:400px;
-    overflow:hidden;
-    position:relative;
+/*cлайдер з фото*/
+.carousel {
+    margin-top: 25px;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
     border-radius: 10px;
-    
     box-shadow: 3px 3px 6px 2px rgb(4, 4, 165);
 }
-.photo_slider_css{position:absolute;
-    animation:round 16s infinite;opacity:0;width:100%}
-@keyframes round {
-25%{opacity:1}
-40%{opacity:0}
-}
-img:nth-child(1){animation-delay:12s}
-img:nth-child(2){animation-delay:8s}
-img:nth-child(3){animation-delay:4s}
-img:nth-child(4){animation-delay:0}
-@media(min-width:0px) and (max-width:320px) {
-.container_slider_css{width:80%;height:190px}
-}
-@media(min-width:321px) and (max-width:480px) {
-.container_slider_css{width:80%;height:190px}
-}
-/*кінець cлайдер з фото*/
 
-/*основні характеристики*/
-h2 {
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.carousel-control-next span{
+background-color: #3e1dfc;
+border-radius: 5%;
+}
+.carousel-control-prev span {
+     background-color: #3e1dfc;
+     border-radius: 5%;
+ }
+
+
+/*кінець cлайдер з фото*/
+/*ціна і вкорзину*/
+.like_cont2 {
+padding-bottom: 15px;
+margin-left: 50px;
+display: flex;
+        justify-content: space-around;
+        align-items: center;
+}
+.like_cont {
+    margin-top: 10px;
+    height: 42px;
+
+}
+.butn {
+    font-size: 42px;
+    width: 60px;
+    background-color: #000c02;
+    color: rgb(255, 255, 255);
+
+}
+.butn:hover {
+
+    border-radius: 5px;
+    color: rgb(226, 240, 99);
+    background-color: rgb(8, 114, 184);
+    border-color: blue;
+}
+.cina {
+
+    width: 200px;
+
+}
+.cina p{
+
+    margin: 0;
+}
+.cinatext {
+    height: 100%;
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 68px;
+    color: rgb(254, 249, 92);
+
+}
+.vkorzinu {
+width: 150px
+}
+.like_cont button a {
+    width: 150px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    text-decoration: none;
     font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0;
+}
+
+.like_cont button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    margin-left: 35px;
+    background: none;
+
+
+
+}
+.like_cont button a {
+    width: 130px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0;
+}
+
+.like_cont button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    margin-left: 35px;
+    background: none;
+    border: none;
+
+
+
+}
+
+.like_cont button span {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.like_cont {
+
+}
+
+.like_cont button a,
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.like_cont button a span {
     font-size: 40px;
     text-align: center;
-    margin: 50px;
+}
+/*основні характеристики*/
+.name-info {
     color: white;
-  font-family: "Arimo", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    padding: 50px;
 }
 
 .main-info {
     width: 60%;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 .tech-info {
+    margin-top: 0;
 margin-left: 50px;
 border: 3px solid #3e1dfc;
 border-radius: 15px;
 background: #537cee;
-padding-top:15px;
 padding-left: 50px;
 padding-right: 15px;
+padding-bottom: 50px;
 display: block;
 width: 100%;
 font-family: "Raleway", sans-serif;
@@ -282,104 +426,11 @@ font-size: 20px;
     border-bottom: 2px dotted white;
     color: white;
     padding-top: 10px;
-}
 
+}
+.info-lines p,span {
+    margin-bottom: 0;
+    margin-top: 15px;
+}
 /* кінець основні характеристики/
 
-/*footer*/
-footer {
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    bottom: 0px;
-    padding: 0;
-    background:none;
-    opacity: 1.1;
-    border-top: 4px solid #3e1dfc;
-    
-    }
-
-    .footer_container {
-background-color: #537cee ;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    padding-top: 10px;
-    }
-    .grafik {
-            width: 12%;
-        height: 100%;
-        margin-left: 40px;
-        color: rgb(0, 0, 0);
-        
-    }
-    .grf {
-        display: flex;
-        justify-content: space-between;
-    }
-    .social {
-            width: 30%;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        margin-right: 10px;
-    }
-    .social img {
-        width: 2.5vw;
-        height: 2.5vw;
-        object-fit: contain;
-    }
-    .bold_text {
-        font-size: 1vw;
-        font-weight: 700;
-    
-    }
-    .grf p {
-        font-size: 1vw;
-    }
-    .grafik_title {
-        text-align: center;
-        font-size: 1.5vw;
-        font-weight: 700;
-    }
-    .contacts {
-    
-        width: 35%;
-        height: 100%;
-        color: rgb(0, 0, 0);
-        position: relative;
-        
-    }
-    .icon_ctnt {
-        
-    }
-    .contn {
-    display: flex;
-    justify-content: space-between;
-    }
-    .cont-title {
-        text-align: center;
-        color: rgb(4, 4, 4);
-        font-size: 1.5vw;
-        font-weight: 700;
-    }
-    .icon_ctnt  img, .txt_ctnt img {
-        width: 1.5vw;
-        height: 1.5vw;
-        object-fit: contain;
-        margin-right: 10px;
-        margin-top: 5px;
-    }
-    .tak {
-        font-size: 1.5vw;
-        padding-bottom: 15px;
-    
-    }
-/*кінець футера*/
-
-/*ціна і вкорзину*/
-
-/*кінець ціна і в корзину*/

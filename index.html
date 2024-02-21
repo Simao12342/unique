@@ -15,7 +15,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -35,191 +49,92 @@
       </div>
     </header>
     <div class="sub-menu">
-    <div class="dropdown">
-      <button class="dropbtn">Каталог товарів</button>
-      <div class="dropdown-content">
-      <a href="#">Автотовари</a>
-      <a href="#">МСО</a>
-      <a href="#">Витратні матеріали</a>
-      <a href="#">Електроінструменти</a>
-      <a href="#">Ручний інструмент</a>
-      <a href="#">Засоби захисту</a>
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Каталог товарів
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Автотовари</a></li>
+          <li>
+            <a class="dropdown-item" href="#">Машини, станки і обладнання</a>
+          </li>
+          <li><a class="dropdown-item" href="#">Витратні матеріали</a></li>
+          <li><a class="dropdown-item" href="#">Електроінструменти</a></li>
+          <li><a class="dropdown-item" href="#">Ручний інструмент</a></li>
+          <li><a class="dropdown-item" href="#">Засоби захисту</a></li>
+        </ul>
       </div>
-    </div>
-    <form class="search-form" action="https://www.google.com/">
-      <input class="search-str" type="text" placeholder="Я шукаю...">
-      <button class="search-btn" type="submit"></button>
-    </form>
-    <div class="like-cont">
-      <button><a href="#"><span class="material-symbols-outlined">
-        favorite
-        </span>Список побажань</a></button>
-    </div>
-    <div class="like-cont">
-      <button><a href="#"><span class="material-symbols-outlined">
-        sync_alt
-        </span>Список порівняння</a></button>
-    </div>
-    <div class="like-cont">
-      <button><a href="#"><span class="material-symbols-outlined">
-        shopping_cart_checkout
-        </span>Ваш кошик</a></button>
-    </div>
-
+      <form class="search-form" action="https://www.google.com/">
+        <input class="search-str" type="text" placeholder="Я шукаю..." />
+        <button class="search-btn" type="submit"></button>
+      </form>
+      <div class="like-cont">
+        <button>
+          <a href="#"
+            ><span class="material-symbols-outlined"> favorite </span>Список
+            побажань</a
+          >
+        </button>
+      </div>
+      <div class="like-cont">
+        <button>
+          <a href="#"
+            ><span class="material-symbols-outlined"> sync_alt </span>Список
+            порівняння</a
+          >
+        </button>
+      </div>
+      <div class="like-cont">
+        <button>
+          <a href="#"
+            ><span class="material-symbols-outlined">
+              shopping_cart_checkout </span
+            >Ваш кошик</a
+          >
+        </button>
+      </div>
     </div>
     <div class="slider">
       <div class="container_slider_css">
-        <img class="photo_slider_css" src="IMG/11pray-for-ukraine.jpg" alt=""/>
-        <img class="photo_slider_css" src="IMG/12pray-for-ukraine.jpg" alt=""/>
-        <img class="photo_slider_css" src="IMG/13pray-for-ukraine.jpg" alt=""/>
-        <img class="photo_slider_css" src="IMG/14.png" alt=""/>
+        <img class="photo_slider_css" src="IMG/11pray-for-ukraine.jpg" alt="" />
+        <img class="photo_slider_css" src="IMG/12pray-for-ukraine.jpg" alt="" />
+        <img class="photo_slider_css" src="IMG/13pray-for-ukraine.jpg" alt="" />
+        <img class="photo_slider_css" src="IMG/14.png" alt="" />
       </div>
     </div>
-    
-    <div class="container_list">
-        <div class="container_tovara">
-          <div class="product_foto_container">
-            <div class="product_foto">
-              <a href="./yryt.html"><img src="IMG/40745643.jpeg" alt="" class="img_p" /></a>
-            </div>
-          </div>
-          <div class="main_container">
-            <div class="nazva">
-              <a href="./yryt.html"
-                ><p class="nazva_tovaru">
-                  Шина PREMIORRI Viamaggiore Z Plus 225/65R17 102 H
-                </p></a
-              >
-            </div>
-            <div class="cina_vkorzinu">
-              <div class="cina">
-                <p class="cinatext">2250 <span>₴</span></p>
-              </div>
-              <div class="vkorzinu">
-                <button class="btn"><i class="fa fa-shopping-cart"></i></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container_tovara">
-          <div class="product_foto_container">
-            <div class="product_foto">
-              <a href="#"><img src="IMG/d0.jpg" alt="" class="img_p" /></a>
-            </div>
-          </div>
-          <div class="main_container">
-            <div class="nazva">
-              <a href="#"><p class="nazva_tovaru">Назва товару</p></a>
-            </div>
-            <div class="cina_vkorzinu">
-              <div class="cina">
-                <p class="cinatext">3333 <span>₴</span></p>
-              </div>
-              <div class="vkorzinu">
-                <button class="btn"><i class="fa fa-shopping-cart"></i></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container_tovara">
-          <div class="product_foto_container">
-            <div class="product_foto">
-              <a href="#"><img src="IMG/d0.jpg" alt="" class="img_p" /></a>
-            </div>
-          </div>
-          <div class="main_container">
-            <div class="nazva">
-              <a href="#"><p class="nazva_tovaru">Назва товару</p></a>
-            </div>
-            <div class="cina_vkorzinu">
-              <div class="cina">
-                <p class="cinatext">3333 <span>₴</span></p>
-              </div>
-              <div class="vkorzinu">
-                <button class="btn"><i class="fa fa-shopping-cart"></i></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container_tovara">
-          <div class="product_foto_container">
-            <div class="product_foto">
-              <a href="#"><img src="IMG/d0.jpg" alt="" class="img_p" /></a>
-            </div>
-          </div>
-          <div class="main_container">
-            <div class="nazva">
-              <a href="#"><p class="nazva_tovaru">Всяка дічь</p></a>
-            </div>
-            <div class="cina_vkorzinu">
-              <div class="cina">
-                <p class="cinatext">666 <span>₴</span></p>
-              </div>
-              <div class="vkorzinu">
-                <button class="btn"><i class="fa fa-shopping-cart"></i></button>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-  
 
-    <footer>
-      <div class="footer_container">
-        <div class="grafik">
-          <p class="grafik_title">Графік роботи:</p>
-          <div class="grf">
-            <span class="bold_text">Пн - Пт :</span>
-            <p>09:00 - 18:00</p>
-          </div>
-          <div class="grf">
-            <span class="bold_text">Сб :</span>
-            <p>10:00 - 15:00</p>
-          </div>
-          <div class="grf">
-            <span class="bold_text">Нд :</span>
-            <p>вихідний</p>
+    <div class="container_list">
+      <div class="container_tovara">
+        <div class="product_foto_container">
+          <div class="product_foto">
+            <a href="./yryt.html"
+              ><img src="IMG/40745643.jpeg" alt="" class="img_p"
+            /></a>
           </div>
         </div>
-        <div class="contacts">
-          <div class="contacts_text">
-            <p class="cont-title">Контакти</p>
-            <div class="contn">
-              <div class="icon_ctnt">
-                <img src="IMG/phone-handset_icon-icons.com_48252.png" alt="" />
-                <span class="tak">+380 66 015 11 79</span>
-              </div>
-              <div class="txt_ctnt">
-                <img
-                  src="IMG/opened-email-envelope_icon-icons.com_70656.png"
-                  alt=""
-                />
-                <span class="tak">soleynik20@gmail.com</span>
-              </div>
+        <div class="main_container">
+          <div class="nazva">
+            <a href="./yryt.html"
+              ><p class="nazva_tovaru">
+                Шина PREMIORRI Viamaggiore Z Plus 225/65R17 102 H
+              </p></a
+            >
+          </div>
+          <div class="cina_vkorzinu">
+            <div class="cina">
+              <p class="cinatext">2250 <span>₴</span></p>
+            </div>
+            <div class="vkorzinu">
+              <button class="butn"><i class="fa fa-shopping-cart"></i></button>
             </div>
           </div>
         </div>
-        <div class="social">
-          <a href="#" class="social_icon"
-            ><img src="IMG/facebook_1384005.png" alt=""
-          /></a>
-          <a href="#" class="social_icon"
-            ><img src="IMG/instagram_733614.png" alt=""
-          /></a>
-          <a href="#" class="social_icon"
-            ><img src="IMG/messenger.png" alt=""
-          /></a>
-          <a href="#" class="social_icon"
-            ><img src="IMG/whatsapp_1384007.png" alt=""
-          /></a>
-          <a href="#" class="social_icon"
-            ><img src="IMG/youtube.png" alt=""
-          /></a>
-          <a href="#" class="social_icon"
-            ><img src="IMG/twitter_1384006.png" alt=""
-          /></a>
-        </div>
       </div>
-    </footer>
+    </div>
   </body>
 </html>

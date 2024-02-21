@@ -6,7 +6,7 @@
 body {
     width: 100%;
     height: 100%;
-    min-height: 2400px;
+
     margin-bottom: 0;
     padding-bottom: 0;
     background: 
@@ -79,64 +79,62 @@ header {
 .sub-menu {
     display: flex;
     align-items:center;
+    justify-content: space-around;
 
 
 }
 /*випадаюче меню*/
-.dropbtn {
-    background-color: #4CAF50;
+.dropdown button {
+    background-color:#3e8e41;
     color: white;
-
-    margin-left: 50px;
+    margin-left: 20px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    width: 175px;
+    width: 250px;
     height: 100%;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    font-weight: bold;
+    font-weight:bold;
 
-  }
-  
-  .dropdown {
+}
+
+.dropdown {
     position: relative;
     display: inline-block;
     height: 42px;
-  }
-  
-  .dropdown-content {
-
-    margin-left: 50px;
+}
+.dropdown-menu {
+    margin-left: 20px;
     display: none;
     position: absolute;
-
     background-color: #f9f9f9;
-    min-width: 175px;
+    width: 250px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
-  
-  .dropdown-content a {
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    color: black;
-    padding: 5px 5px;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    border-bottom: 1px solid gray;
-  }
-  
-  .dropdown-content a:hover {background-color: #537cee;
 
 }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
+
+.dropdown-menu a{
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    color: rgb(60, 31, 164);
+    padding: 10px 0px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid gray;
+
+}
+
+.dropdown-menu a:hover {background-color: #537cee;
+
+}
+
+.dropdown:hover .dropdown-content {
+
+}
+
+.btn:hover .dropbtn {
     background-color: #3e8e41;
     
   }
@@ -247,8 +245,8 @@ img:nth-child(4){animation-delay:0}
 }
 
 .container_tovara {
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     margin: 15px;
     position: relative;
     border-radius: 8px;
@@ -290,7 +288,7 @@ img:nth-child(4){animation-delay:0}
 .main_container {
     width: 100%;
     height: 30%;
-background-color: rgb(231, 223, 223);
+background-color: rgb(236, 236, 236);
 border-bottom-left-radius: 8px;
 border-bottom-right-radius: 8px;
 }
@@ -304,6 +302,11 @@ border-bottom-right-radius: 8px;
 .nazva a {
     text-decoration: none;
     color: black;
+}
+.nazva_tovaru {
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
 }
 
 .cina_vkorzinu {
@@ -322,30 +325,26 @@ border-bottom-right-radius: 8px;
 .cinatext {
     font-family: 'Lora', serif;
     text-align: center;
-    font-size: 20px;
-    color: rgb(199, 13, 13);
-}
-
-.nazva_tovaru {
-    text-align: center;
-    font-family: 'Exo 2', sans-serif;
-    font-size: 15px;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(237, 26, 26);
 }
 
 .vkorzinu {}
 
-.btn {
+.butn {
+    background-color: rgb(236, 236, 236);
     color: rgb(15, 19, 241);
     font-size: 25px;
     cursor: pointer;
-    width: 35px;
+    width: 50px;
     position: absolute;
     right: 5px;
     bottom: 5px;
     border: none;
 }
 
-.btn:hover {
+.butn:hover {
 
     border-radius: 5px;
     color: rgb(226, 240, 99);
@@ -398,7 +397,7 @@ background-color: #537cee ;
         height: 2.5vw;
         object-fit: contain;
     }
-    .bold_text {
+    .bol_text {
         font-size: 1vw;
         font-weight: 700;
     
