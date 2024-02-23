@@ -5,13 +5,11 @@
 }
 body {
     width: 100%;
-    height: 100%;
-    min-height: 2400px;
+    height: 200vh;
     margin-bottom: 0;
     padding-bottom: 0;
     background: 
-    url("../IMG/pray-for-ukraine.webp") center 
-    no-repeat;
+    url("../IMG/pray-for-ukraine.webp");
     background-size:cover;
     position: relative;
 }
@@ -278,19 +276,34 @@ display: flex;
     height: 42px;
 
 }
-.butn {
-    font-size: 42px;
-    width: 60px;
-    background-color: #000c02;
+.butn-to-buy {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+height: 50px;
+    width: 150px;
+background: none;
     color: rgb(255, 255, 255);
+    border-radius: 15px;
+display: flex;
+justify-content: center;
+border: 5px solid rgb(255, 255, 255);
 
 }
-.butn:hover {
+.butn-to-buy a{
 
-    border-radius: 5px;
-    color: rgb(226, 240, 99);
-    background-color: rgb(8, 114, 184);
+    text-decoration: none;
+    padding-top: 0;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin: 0;
+} 
+.butn-to-buy:hover {
+
+    border-radius: 15px;
+    background-color: #3e1dfc;
     border-color: blue;
+    transform: scale(1.05);
+    transition: all 0.2s ease;
 }
 .cina {
 
@@ -396,7 +409,7 @@ span {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    padding: 50px;
+    padding-top: 25px;
 }
 
 .main-info {
@@ -434,3 +447,67 @@ font-size: 20px;
 }
 /* кінець основні характеристики/
 
+/*footer*/
+footer {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 115px;
+    background: linear-gradient(rgb(128, 128, 246), blue);
+
+}
+.fully {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logos-footer img {
+    width: 150px;
+    height: 60px;
+}
+.phoneAndEmail {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+
+}
+.contacts {
+text-align: center;
+font-size: 25px;
+    color: white;
+    margin: 0;
+
+}
+.tel-mail {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        gap: 10px;
+}
+.tel-mail p{
+    margin: 0;
+}
+.social-icons {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.social-icons i{
+
+font-size: 40px;
+margin: 10px;
+    color: white;
+
+
+}
